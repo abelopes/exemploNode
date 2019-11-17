@@ -16,6 +16,8 @@ const route = router.get('/',(req,res,next) => {
     });
 });
 
+app.listen(3000, ()=>{console.log("rodando na 3000");});
+
 const create = router.post('/',(req, res, next) => {
     res.status(201).send(req.body);
 });
