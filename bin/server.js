@@ -1,7 +1,7 @@
 'use strict'
 
 const app =   require('../src/app');
-const  http = require('http');
+const http = require('http');
 const debug = require('debug')('nodestr:server');
 
 const port = normalizePort(process.env.port || '3001');
@@ -34,4 +34,4 @@ function onListening() {
         ? 'pipe ' + addr
         : 'pipe ' + addr.port;
     debug('Listening on '+ bind);
-}   
+}
